@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Neucha&family=Victor+Mono:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#06bfcc, #bbb9b4);
+    background-repeat: no-repeat;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+.imagem img{
+    width: 170px;
+    border-radius: 200px;
+    margin-top: 30px;
+}
+.nome{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #f3f3f3;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+.icone, .email {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 5px 5px rgba(0,0,0,.1);
+    cursor: pointer;
+    margin: 3px;
+    overflow: hidden;
+}
+.icone i, .email i{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 30px;
+    background-color: rgb(237, 237, 237);
+    color: rgb(0, 0, 0); 
+    cursor: pointer;
+}
+.icone span a{
+    list-style: none;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    float: right;
+    margin-right: 23px;
+    font-weight: 100;
+    color: #0a0a0a;
+    line-height: 35px;
+    font-size: 17px;
+}
+.nome-icone {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-right: 40px;
+    float: right;
+    color: #f2f2f2;
+    font-weight: 100;
+    line-height: 35px;
+    font-size: 17px;
+}
+.icone:hover {
+    width: 125px;
+    background-color: rgb(226, 225, 224);
+    border-radius: 20px;
+}
+.redes-sociais{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes-sociais a{
+    text-decoration: none;
+}
+
+.texto{
+    display: flex;
+    position: relative; /*   */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin: 50px 30px;
+    font-family: 'Victor Mono', monospace;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: justify;
+    width: 700px;
+    height: 200px;
+    padding: 50px;
+    border-radius: 24px;
+    color: rgb(0, 0, 0);
+    background: rgb(223, 217, 214);
+    overflow: hidden;
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+}
+.sobre-mim{
+    position: absolute;
+    top: 10px; /* Move o topo do h2 para o centro vertical */
+    /* para valores em porcetagem - transform: ;*/
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    line-height: 35px;
+}
+.subtitulo{
+    font-weight: 100;  /* peso do texto ou negrito */
+    color: #000000;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+.linguagem{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.linguagem img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-radius: 20px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
+.projetos{
+    margin-top: 100px;
+    flex-direction: column;
+}
+.item{
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 40px;
+    font-size: 22px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #000000af;
+    background: white;
+    box-shadow: 2px 5px 2px rgba(53, 53, 53, 0.5);
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.item:hover{
+    transition: 0.2s;
+    background: rgb(199, 199, 199);
+}
+.video{
+    padding: 15px;
+    margin: auto;
+    display: none;
+}
+.video:active{
+    display:block ;
+}
+footer p{
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+/* FIM CSS DESKTOP  */
+
+
+/* Recurso para Renderizar o conteudo do site e adapte para diversos dispositivos Móveis ou resoluções */
+
+@media (max-width: 700px){
+    .imagem img{
+        width: 140px;
+        margin-top: 25px;
+    }
+    .texto{
+        width: 300px;
+        height: 430px;
+    }
+    .linguagem img{
+        width: 220px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .item{
+        width: 350px;
+    }
+    .video{
+        width: 250px;
+    }
+}  /* fim Resolução 700px */ 
+
+
+/* resolução para Smarthphone */
+@media (max-width: 500px) {
+    .imagem img {
+       width: 100px;
+       margin-top: 30px;
+    }
+    .nome{
+        font-size: 25px;
+    }
+    .texto{
+        margin-top: 50px;
+        width: 200px;
+        height: 620px;
+        padding: 30px;
+    }
+    .sobre-mim{
+        font-size: 20px;
+    }
+    .subtitulo{
+        font-size: 25px;
+    }
+   .item{
+    width: 260px;
+    height: 40px;
+    margin-top: 15px;
+   }
+   .video {
+    width: 250px;
+    height: 160px;
+   }
+}
